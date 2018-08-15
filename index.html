@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>URL shortener</title>
+
+	<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+
+    <link href="https://fonts.googleapis.com/css?family=Karla|Lobster|Nanum+Myeongjo:800|Pacifico" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">    </script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <script type="text/javascript" src="nav.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <script type="text/javascript" src="https://cldup.com/S6Ptkwu_qA.js"></script>
+
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<div id="particles-js"></div>
+<body>
+
+    
+    <script src="particles.js"></script>
+
+	<nav class="navbar navbar-default navbar-fixed-top opaque-navbar" id="header">
+		<div class="container">
+
+			<div class="navbar-header" id="mynav">
+				<a href="#" class="navbar-brand">URL Shortener</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+                <li class="menu"><a href="#info">About</a></li>
+                <li class="menu"><a href="#info">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+
+    <div class="row fill zoom">
+        <div class="col-md-2">
+        	<center>
+        		<img src="link.png" width="100%"></div>
+        	</center>
+        <div class="col-md-8 ">
+            <div class="fill1">
+        	<center>
+        		<h1>Make your URL short</h1>
+        		<br><br>
+                    <form class="form-inline" >
+        	        <div class="form-group">
+        	        	<div class="row">
+        	        		<div class="col-md-6">
+        	        			<label for="link">Enter Url:</label>
+        	        		</div>
+        	        	
+        	        	    <div class="col-md-6">
+        	        		    <input class="form-control" type="url" id="link" name="link" placeholder="Enter Your link here" required>
+        	        	    </div>
+                        </div>
+
+                        <br><br>
+
+        	        	<div class="row">
+        	        		<div class="col-md-6">
+        	        			<label for="link-def">www.urlshortener.com/</label>
+        	        		</div>
+        	        	
+        	        	    <div class="col-md-6">
+        	        		    <input class="form-control" type="text" id="link-def" name="link-def" placeholder="Enter default name">
+        	        	    </div>
+        		       </div>
+        	        
+        	        <br><br>
+        	        <button type="submit" class="btn btn-default btn-lg">Shorten</button>
+                </form>
+            </center>
+            <hr>
+            <br>
+            <center>
+            <form class="form-inline">
+            	<div class="form-group">
+            		<label for="shortedurl">Your shortened Url:</label>
+            		<input class="form-control" id="shortedurl" type="text" placeholder="Your url" value="www.mayaweb.com" readonly>
+            		<button onclick="myFunction()" class="btn btn-default btn-sm"><i class="fas fa-clipboard-list"></i> Copy text</button>
+            	</div>
+            </form>
+            </center>
+        	</div>	
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+    <div class="footer" id="info">
+        <div class = "row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 circle">
+                <center>
+                <p>powered by <strong><i>Maya Web Developers</i></strong></p>
+                <br>
+                <p>For any queries mail us to : maya.creatives@yahoo.com</p>
+                <button class="btn btn-default btn-sm"><a href="mailto:maya.creatives@yahoo.com?Subject=Regarding%20a%20query%20in%20your%20URL%20Shortener">Send a mail</a></button>
+            </center>
+            </div>
+            <!-- <div class="col-md-1"></div>
+            <div class="col-md-3 circle">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
+            </div> -->
+            <div class="col-md-1"></div>
+            <div class="col-md-1"><p><i class="fab fa-facebook fa-5x zoom"></i></p></div>
+            <div class="col-md-1"><p><i class="fab fa-linkedin fa-5x zoom"></i></p></div>
+            <div class="col-md-1"><p><i class="fab fa-twitter-square fa-5x zoom"></i></i></p></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+
+
+
+<script>
+function myFunction() {
+  var copyText = document.getElementById("shortedurl");
+  copyText.select();
+  document.execCommand("Copy");
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+    
+</body>
+</html>
